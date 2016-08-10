@@ -1,0 +1,126 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gosuncn.test.MainActivity"
+    >
+    <!--group是用来显示单选或多选操作的，如下面的两个group-->
+    <!--checkableBehavior:all-checkbox  single-radiobox-->
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/mi1"
+            android:title="check1" />
+        <item
+            android:id="@+id/mi2"
+            android:title="check2" />
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/mi3"
+            android:title="日间模式" />
+        <item
+            android:id="@+id/mi4"
+            android:title="夜间模式" />
+    </group>
+    <!--always：总是显示在界面上
+        never：不显示在界面上，只让出现在右边的三个点中
+        ifRoom：如果有位置才显示，不然就出现在右边的三个点中
+        orderInCategory值越小越靠前-->
+    <item
+        android:id="@+id/action_scrolling"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="100"
+        android:title="Scrolling"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_vector"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="1"
+        android:title="矢量动画"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_explosion"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="爆炸效果"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_recycler"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="RecyclerView"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_glsurfaceview"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="GLSurfaceView"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tab"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="TabLayout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_rxjava"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="RxJava"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_loadingview"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="LoadingView"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_bottomsheet"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="BottomSheet"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_pulltorefresh"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="PullToRefresh"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_glide"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="glide"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_openfire"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="2"
+        android:title="openfire"
+        app:showAsAction="never" />
+
+    <!--二级菜单-->
+    <item
+        android:id="@+id/c11_submenu"
+        android:orderInCategory="3"
+        android:title="A submenu">
+        <menu>
+            <!-- android:alphabeticShortcut:菜单选择的快捷键-->
+            <item
+                android:id="@+id/c11_non_ghost"
+                android:alphabeticShortcut="n"
+                android:title="Non-Ghost"
+                android:visible="true" />
+            <item
+                android:id="@+id/c11_ghost"
+                android:alphabeticShortcut="g"
+                android:title="Ghost"
+                android:visible="true" />
+        </menu>
+    </item>
+</menu>

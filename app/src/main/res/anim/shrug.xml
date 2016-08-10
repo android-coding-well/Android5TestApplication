@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<set>标签的android:ordering属性规定了这个set中的动画的执行顺序。该属性值默认是together (default)-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"  android:ordering="sequentially">
+    <!--repeatMode:restart-重新开始 reverse-逆向
+    repeatCount：重复次数 0表示不重复 infinite表示循环-->
+    <objectAnimator
+        android:propertyName="translateY"
+        android:valueType="floatType"
+        android:valueFrom="0"
+        android:valueTo="-10"
+        android:repeatMode="reverse"
+        android:repeatCount="infinite"
+        android:duration="250" />
+</set>

@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/pull_to_refresh_head"  
+    android:layout_width="fill_parent"
+    android:background="@null"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dip"
+    android:paddingBottom="20dip" >  
+  
+    <ImageView 
+        android:id="@+id/iv_refresh_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:layout_marginLeft="50dip"
+        android:layout_gravity="center_vertical|left"
+        android:src="@drawable/refresh_hint"/>
+    
+    <TextView android:id="@+id/tv_refresh_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textSize="16sp"/>
+  
+</FrameLayout>  

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gosuncn.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VectorActivity" />
+        <activity android:name=".ExplosionActivity" />
+        <activity android:name=".recyclerview.RecycleViewActivity" />
+        <activity android:name=".GLSurfaceView.Test2Activity" />
+        <activity
+            android:name=".TabActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RxJavaActivity" />
+        <activity android:name=".LoadingViewActivity" />
+        <activity android:name=".BottomSheetActivity" />
+        <activity android:name=".PullToRefreshActivity" />
+        <activity android:name=".BottomSheet2Activity" />
+        <activity android:name=".GlideActivity" />
+        <activity android:name=".OpenfireActivity" />
+        <activity android:name=".openfire.LoginActivity" />
+        <activity android:name=".openfire.SettingActivity" />
+        <activity android:name=".openfire.ContactActivity" />
+        <activity android:name=".openfire.RegisterActivity" />
+        <activity android:name=".openfire.ChatActivity"></activity>
+    </application>
+
+</manifest>

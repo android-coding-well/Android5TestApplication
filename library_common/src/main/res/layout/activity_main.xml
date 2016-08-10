@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.gosuncn.core.percentlayout.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world" />
+
+            <Button
+                android:id="@+id/btn_main_showloadingdialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="显示加载对话框" />
+
+            <com.gosuncn.core.widget.CircleImageView
+                android:id="@+id/civ_main_circleview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher"
+                app:border_color="#9900FF00"
+                app:border_width="3dp" />
+
+            <com.gosuncn.core.percentlayout.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_main_show"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#808080"
+                    android:text="百分比布局：50%w 10%h"
+                    app:layout_heightPercent="10%h"
+                    app:layout_widthPercent="50%w" />
+            </com.gosuncn.core.percentlayout.PercentRelativeLayout>
+
+            <Button
+                android:id="@+id/btn_main_anim_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摇头动画" />
+
+            <com.gosuncn.core.percentlayout.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <uk.co.senab.photoview.PhotoView
+                    android:id="@+id/pv_main_show_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_launcher"
+                    app:layout_heightPercent="50%w"
+                    app:layout_widthPercent="100%w" />
+            </com.gosuncn.core.percentlayout.PercentRelativeLayout>
+
+            <Button
+                android:id="@+id/btn_main_take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍照裁剪" />
+
+            <Button
+                android:id="@+id/btn_main_open_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相册裁剪" />
+
+            <Button
+                android:id="@+id/btn_snapshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截屏" />
+
+            <Button
+                android:id="@+id/btn_main_downloadapk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="download apk" />
+
+            <Button
+                android:id="@+id/btn_main_sweetalert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sweetalert test" />
+
+            <Button
+                android:id="@+id/btn_main_jacksontest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jackson test" />
+
+            <Button
+                android:id="@+id/btn_main_volleytest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="volley test" />
+            <Button
+                android:id="@+id/btn_main_ormlitetest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ormlite test" />
+
+
+        </com.gosuncn.core.percentlayout.PercentLinearLayout>
+    </ScrollView>
+</LinearLayout>
